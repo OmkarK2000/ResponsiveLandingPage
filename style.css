@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+.nav{
+    /* background-color: rgb(135, 219, 222); */
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #bbb;
+}
+.logo{
+    margin-left: 5vw;
+    font-size: 16px;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    margin-right: 5vw;
+}
+.menu h4{
+    margin-right: 1vw;
+}
+.menu button{
+    font-size: 1vw;
+    background-color: #4AEFDF;
+    color: white;
+    border: none;
+    outline: none;
+    padding: 1.5vh;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 16px;
+}
+.menu button:hover{
+    background-color: #018673;
+}
+.menu button:active{
+    background-color: #B4F7EE;
+}
+.menu i{
+    display: none;
+}
+main{
+    display: flex;
+}
+.left{
+    width: 45vw;
+    margin-left: 5vw;
+}
+.left h5{
+    font-size: 4.5vw;
+    margin-top: 10vh;
+}
+.left span{
+    color: #4AEFDF;
+}
+.left p{
+    margin-top: 3vw;
+    font-size: 1.3vw;
+}
+.left button{
+    background-color: #4AEFDF;
+    color: white;
+    margin-top: 4vh;
+    font-size: 2.3vh;
+    padding: 1.8vh 2.2vh;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 16px;
+}
+.left button:hover{
+    background-color: #018673;
+}
+.left button:active{
+    background-color: #B4F7EE;
+}
+.right{
+    width: 45vw;
+    margin-right: 5vw;
+}
+.right img{
+    height: 100%;
+    width: 100%;
+}
+
+
+@media (max-width:600px) {
+    .nav{
+
+    }
+    .menu h4{
+        display: none;
+    }
+    .menu button{
+        display: none;
+    }
+    .menu i{
+        display: inline;
+        font-size: 22px;
+    }
+    main{
+        flex-direction: column;
+    }
+    .left{
+        margin-left: 5vw;
+        margin-top: 4vh;
+        width: 90%;
+    }
+    .left h5{
+        font-size: 4.5vh;
+        margin-top: 1vh;
+    }
+    .left p{
+        font-size: 2vh;
+    }
+    .left button{
+        background-color: #4AEFDF;
+        color: white;
+        margin-top: 4vh;
+        font-size: 2vh;
+        padding: 1.6vh 2vh;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        font-weight: 700;
+        font-size: 16px;
+    }
+    .right{
+        width: 80vw;
+        margin-top: 5vh;
+        margin-left: 5vw;
+    }
+}
